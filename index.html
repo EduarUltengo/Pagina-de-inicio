@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master Inventory - Plataforma de experiencia de sitio web">
+    <title>Master Inventory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="logo">Master Inventory</div>
+        
+        <!-- Campo de búsqueda -->
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar" aria-label="Buscar">
+        </div>
+
+        <div class="navbar-buttons">
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">🌙</button>
+            <button class="notification-toggle" onclick="toggleNotifications()" aria-label="Toggle notifications">🔔</button>
+        </div>
+    </nav>
+
+    <!-- Contenedor de notificaciones -->
+    <div class="notifications-container" id="notificationsContainer" style="display: none;">
+        <h3>Notificaciones</h3>
+        <ul id="notificationList">
+        </ul>
+    </div>
+
+    <!-- Contenido principal -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>¡Bienvenid@ a Master Inventory!</h1>
+                <p>"Encuentra todo lo que necesitas para tus proyectos, desde herramientas hasta materiales, con la mejor calidad y servicio. ¡Explora nuestro inventario y comienza a construir tus ideas!"</p>
+            </div>
+        </section>
+
+        <!-- Sección los cuadros 2x2 :v -->
+        <section class="features-grid">
+            <div class="feature-card" style="background-image: url('inventario.png');">
+                <div class="overlay">
+                    <h3>Inventario y reabastecimiento</h3>
+                    <button>Ir</button>
+                </div>
+            </div>
+            <div class="feature-card" style="background-image: url('estadistica.png');">
+                <div class="overlay">
+                    <h3>Contabilidad y estadísticas</h3>
+                    <button>Ir</button>
+                </div>
+            </div>
+            <div class="feature-card" style="background-image: url('roles.png');">
+                <div class="overlay">
+                    <h3>Creación de roles</h3>
+                    <button>Ir</button>
+                </div>
+            </div>
+            <div class="feature-card" style="background-image: url('ventas.png');">
+                <div class="overlay">
+                    <h3>Registro de ventas</h3>
+                    <button>Ir</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página :) -->
+    <footer>
+        <div class="footer-container">
+            <!-- Sobre Nosotros -->
+            <div class="footer-section">
+                <h3>Información</h3>
+                <p>Soluciones de organización, control y optimización de inventarios, orientadas a facilitar tus procesos y mejorar la eficiencia en el uso de materiales y herramientas. Con Master Inventory, podrás llevar un control preciso, simplificado y accesible de todos tus recursos.</p>
+            </div>
+    
+            <!-- Recomendaciones :u -->
+            <div class="footer-section">
+                <h3>Recomendaciones</h3>
+                <p>Para aprovechar al máximo Master Inventory, mantén el inventario actualizado, revisa estadísticas, asigna roles, configura notificaciones importantes y explora el catálogo completo para gestionar eficientemente tus recursos.</p>
+            </div>
+        </div>
+    
+        <p class="footer-copy">&copy; 2024 Ferretería Master Inventory. Todos los derechos reservados.</p>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
